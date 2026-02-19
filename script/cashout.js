@@ -12,7 +12,7 @@ document.getElementById('btn-cashout').addEventListener('click', function () {
     //4 calculate new balance
     const newBalance = currentBalance - Number(cashoutAmount);
     if (newBalance < 0) {
-        alert('Invalid Amount');
+        alert('Insufficient Amount');
         return
     }
     //5 get the pin and verify
